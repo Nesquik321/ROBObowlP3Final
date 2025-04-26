@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 5f;
     public float sprintSpeed = 8f;
     public float rotationSpeed = 720f;
+    public Football football;
+    public Transform[] teammates;
 
     private Rigidbody rb;
     private Vector3 movement;
@@ -32,6 +34,11 @@ public class PlayerController : MonoBehaviour
         {
             Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            football.PassTo(teammates[0]);
         }
     }
 

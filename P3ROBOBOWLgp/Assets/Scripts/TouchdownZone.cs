@@ -15,6 +15,7 @@ public class TouchdownZone : MonoBehaviour
         {
             Debug.Log("Touchdown!");
             ScoreManager.Instance.AddPoints(touchdownPoints);
+            TouchdownUI.Instance.ShowTouchdown();
             StartCoroutine(StartCooldown());
         }
 
