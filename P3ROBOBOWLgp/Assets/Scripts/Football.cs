@@ -6,6 +6,7 @@ public class Football : MonoBehaviour
 {
     public float passForce = 10f;
     public Rigidbody rb;
+    public PlayerController currentController;
     private Transform attachedTo = null;
 
     void Awake()
@@ -56,7 +57,8 @@ public class Football : MonoBehaviour
         PlayerController newController = target.GetComponent<PlayerController>();
         if (newController != null)
         {
-            GameManager.Instance.SwitchControl(newController);
+            TeammateController oldAI = currentController.GetComponent<TeammateController>();
+            GameManager.Instance.SwitchControl(newController, oldAI);
         }
     }
 

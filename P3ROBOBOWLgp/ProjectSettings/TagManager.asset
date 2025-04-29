@@ -6,6 +6,8 @@ TagManager:
   tags:
   - EndZone
   - Teammate
+  - Quaterback
+  - Ball
   layers:
   - Default
   - TransparentFX

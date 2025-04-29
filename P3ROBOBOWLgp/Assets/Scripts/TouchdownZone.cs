@@ -11,7 +11,7 @@ public class TouchdownZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !isOnCooldown)
+        if (other.CompareTag("Ball") && !isOnCooldown)
         {
             Debug.Log("Touchdown!");
             ScoreManager.Instance.AddPoints(touchdownPoints);

@@ -46,6 +46,18 @@ public class PlayerController : MonoBehaviour
         {
             football.PassTo(teammates[0], teammateHands[0]);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            football.PassTo(teammates[1], teammateHands[1]);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            football.PassTo(teammates[2], teammateHands[2]);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            football.PassTo(teammates[3], teammateHands[3]);
+        }
     }
 
     void FixedUpdate()

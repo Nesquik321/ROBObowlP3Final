@@ -34,4 +34,9 @@ public class CameraFollow : MonoBehaviour
         Vector3 lookAtPoint = target.position + Vector3.forward * 5f;
         transform.LookAt(lookAtPoint);
     }
+
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
 }
