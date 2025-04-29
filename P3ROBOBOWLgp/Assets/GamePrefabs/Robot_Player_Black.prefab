@@ -1210,6 +1210,7 @@ Transform:
   - {fileID: 5366619890964211433}
   - {fileID: 7387609755763977886}
   - {fileID: 794202805510734736}
+  - {fileID: 2351052723018498379}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6497569354481869559
@@ -1296,6 +1297,8 @@ MonoBehaviour:
   walkSpeed: 5
   sprintSpeed: 8
   rotationSpeed: 720
+  football: {fileID: 0}
+  teammates: []
 --- !u!1 &3858711304343744216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1586,37 @@ Transform:
   m_Children:
   - {fileID: 5617393333681295950}
   m_Father: {fileID: 3384625183095565037}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4572133195148740110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2351052723018498379}
+  m_Layer: 0
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2351052723018498379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572133195148740110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.91, y: 0.962, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7746332669267172358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4705367388512839404
 GameObject:

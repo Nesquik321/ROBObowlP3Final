@@ -186,6 +186,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3771530830902034749, guid: c0562429172343f40bbd26a5dff66990, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7285499388920270684}
+    - targetCorrespondingSourceObject: {fileID: 3771530830902034749, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7285499388920270689}
   m_SourcePrefab: {fileID: 100100000, guid: c0562429172343f40bbd26a5dff66990, type: 3}
 --- !u!1 &96864835
 GameObject:
@@ -794,6 +797,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1109488247 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2351052723018498379, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+  m_PrefabInstance: {fileID: 55745237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1271262978
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271262980}
   - component: {fileID: 1271262979}
+  - component: {fileID: 1271262981}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -839,6 +848,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1271262981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271262978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2656284f01807124f8e505f189188ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentController: {fileID: 4555063226653658}
+--- !u!1001 &1399579271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 778470189290899795, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_Name
+      value: Football
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450455319848749406, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: passForce
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.968
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70013386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7140117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+--- !u!4 &1695498804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2351052723018498379, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+  m_PrefabInstance: {fileID: 3455938317807866162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767615603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1450455319848749406, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+  m_PrefabInstance: {fileID: 1399579271}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322f510d0090e7b45b1a87f99ef27fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2038953976
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,6 +1060,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7746332669267172358, guid: c0562429172343f40bbd26a5dff66990, type: 3}
   m_PrefabInstance: {fileID: 3455938317807866162}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4555063226653658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+  m_PrefabInstance: {fileID: 3455938317807866162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b079ff8cac0041bbac95675812904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3455938317807866162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -972,7 +1082,11 @@ PrefabInstance:
     - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
       propertyPath: football
       value: 
-      objectReference: {fileID: 1450455319848749406, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
+      objectReference: {fileID: 1767615603}
+    - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+      propertyPath: playerHand
+      value: 
+      objectReference: {fileID: 1695498804}
     - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
       propertyPath: teammates.Array.size
       value: 1
@@ -980,7 +1094,15 @@ PrefabInstance:
     - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
       propertyPath: teammates.Array.data[0]
       value: 
-      objectReference: {fileID: 6044018352541633934, guid: 75ae7598d4db70d4f9603c1f31237142, type: 3}
+      objectReference: {fileID: 7285499388920270688}
+    - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+      propertyPath: teammateHands.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105615031692476687, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+      propertyPath: teammateHands.Array.data[0]
+      value: 
+      objectReference: {fileID: 1109488247}
     - target: {fileID: 3771530830902034749, guid: c0562429172343f40bbd26a5dff66990, type: 3}
       propertyPath: m_Name
       value: Robot_Soldier_Black
@@ -1047,6 +1169,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c893fe27c97024ba9b5dba8edb1ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7285499388920270688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7746332669267172358, guid: c0562429172343f40bbd26a5dff66990, type: 3}
+  m_PrefabInstance: {fileID: 55745237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7285499388920270689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4237008549296656992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b079ff8cac0041bbac95675812904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 5
+  sprintSpeed: 8
+  rotationSpeed: 720
+  football: {fileID: 1767615603}
+  teammates:
+  - {fileID: 4555063226653657}
+  teammateHands:
+  - {fileID: 1695498804}
+  playerHand: {fileID: 1109488247}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1060,3 +1208,4 @@ SceneRoots:
   - {fileID: 1271262980}
   - {fileID: 2038953981}
   - {fileID: 96864838}
+  - {fileID: 1399579271}

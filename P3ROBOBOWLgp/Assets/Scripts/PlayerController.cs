@@ -9,20 +9,26 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 720f;
     public Football football;
     public Transform[] teammates;
+    public Transform[] teammateHands;
+    public Transform playerHand;
 
     private Rigidbody rb;
     private Vector3 movement;
     private float currentSpeed;
+    private bool isControlled = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        football.AttachTo(playerHand);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!isControlled) return;
+
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
@@ -38,12 +44,17 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            football.PassTo(teammates[0]);
+            football.PassTo(teammates[0], teammateHands[0]);
         }
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * currentSpeed * Time.fixedDeltaTime);
+    }
+
+    public void SetControlled(bool controlled)
+    {
+        isControlled = controlled;
     }
 }
