@@ -6,8 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public PlayerController currentController;
+    public PlayerController startingPlayerController;
     public CameraFollow cameraFollow;
+
+    private PlayerController currentController;
+    public Transform ballCarrier;
+    public bool ballPassed = false;
 
    private void Awake()
     {
@@ -19,16 +23,23 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        TeammateController oldAI = currentController.GetComponent<TeammateController>();
-        GameManager.Instance.SwitchControl(currentController, oldAI);
+        if(startingPlayerController != null)
+        {
+            SwitchControl(startingPlayerController);
+        }
+        else
+        {
+            Debug.LogError("Starting player controller not assigned in GameManager!");
+        }
     }
 
-    public void SwitchControl(PlayerController newController, TeammateController oldAI)
+    public void SwitchControl(PlayerController newController)
     {
         if (currentController != null)
         {
             currentController.SetControlled(false);
 
+            TeammateController oldAI = currentController.GetComponent<TeammateController>();
             if (oldAI != null)
                 oldAI.SetControlled(false);
         }
@@ -44,5 +55,18 @@ public class GameManager : MonoBehaviour
         {
             cameraFollow.SetTarget(currentController.transform);
         }
+    }
+
+    public void SetBallCarrier(Transform newCarrier, bool isPassed = false)
+    {
+        ballCarrier = newCarrier;
+        ballPassed = isPassed;
+    }
+
+    public void EndPlay()
+    {
+        Debug.Log("Player stopped! Defender made contact");
+
+        Time.timeScale = 0f;
     }
 }

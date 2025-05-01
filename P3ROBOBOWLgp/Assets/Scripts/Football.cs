@@ -27,6 +27,7 @@ public class Football : MonoBehaviour
     {
         attachedTo = hand;
         rb.isKinematic = true;
+        GameManager.Instance.ballCarrier = hand.parent;
     }
 
     public void Detach()
@@ -57,8 +58,8 @@ public class Football : MonoBehaviour
         PlayerController newController = target.GetComponent<PlayerController>();
         if (newController != null)
         {
-            TeammateController oldAI = currentController.GetComponent<TeammateController>();
-            GameManager.Instance.SwitchControl(newController, oldAI);
+            GameManager.Instance.SwitchControl(newController);
+            GameManager.Instance.SetBallCarrier(hand.root, true);
         }
     }
 

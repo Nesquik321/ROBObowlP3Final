@@ -7,6 +7,18 @@ public class TeammateController : MonoBehaviour
     public FootballPosition position;
     private bool isControlled = false;
 
+    public void SetControlled(bool controlled)
+    {
+        isControlled = controlled;
+
+        if (controlled)
+        {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            if (rb != null)
+                rb.velocity = Vector3.zero;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -27,20 +39,19 @@ public class TeammateController : MonoBehaviour
                 Idle();
                 break;
         }
-    }
 
-    public void SetControlled(bool control)
-    {
-        isControlled = control;
     }
 
     void RunRoute()
     {
+        if (isControlled) return;
         transform.Translate(Vector3.forward * 3f * Time.deltaTime);
     }
 
     void FollowQB()
     {
+        if (isControlled) return;
+
         GameObject qb = GameObject.FindWithTag("Quaterback");
         if(qb != null)
         {
@@ -51,11 +62,11 @@ public class TeammateController : MonoBehaviour
 
     void Block()
     {
-
+        if (isControlled) return;
     }
 
     void Idle()
     {
-
+        if (isControlled) return;
     }
 }
