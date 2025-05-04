@@ -7,7 +7,7 @@ public class DefenderAI : MonoBehaviour
     public DefenderType DefenderType;
     public Transform quaterback;
     public Transform[] receivers;
-    public float speed = 4f;
+    public float speed = 8f;
     private Transform currentTarget;
 
     // Start is called before the first frame update
