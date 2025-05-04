@@ -26,6 +26,8 @@ public class DefenderAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.Instance.playStarted) return;
+
         if(GameManager.Instance.ballPassed && GameManager.Instance.ballCarrier != null)
         {
             Vector3 target = GameManager.Instance.ballCarrier.position;

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerController startingPlayerController;
     public CameraFollow cameraFollow;
+    public bool playStarted = false;
 
     private PlayerController currentController;
     public Transform ballCarrier;
@@ -31,6 +32,20 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("Starting player controller not assigned in GameManager!");
         }
+    }
+
+    void Update()
+    {
+        if (!playStarted && Input.GetKeyDown(KeyCode.Space))
+        {
+            StartPlay();
+        }
+    }
+
+    public void StartPlay()
+    {
+        playStarted = true;
+        Debug.Log("Play Started");
     }
 
     public void SwitchControl(PlayerController newController)

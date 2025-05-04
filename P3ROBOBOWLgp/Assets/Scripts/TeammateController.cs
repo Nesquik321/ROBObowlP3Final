@@ -22,7 +22,7 @@ public class TeammateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isControlled) return;
+        if (isControlled || !GameManager.Instance.playStarted) return;
 
         switch (position)
         {
