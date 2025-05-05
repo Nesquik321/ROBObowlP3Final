@@ -553,6 +553,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 1531391139}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &132584345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,6 +1492,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 913975508}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &239809202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,6 +2455,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 2112175751}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &583192668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3315,6 +3318,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 1275079735}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &834311577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,6 +3716,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 1995410787}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &900821075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4916,7 +4921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.5
+      value: -39.35
       objectReference: {fileID: 0}
     - target: {fileID: 6046167513363238401, guid: d87c32959867ab441b45ac7b0e928599, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6672,6 +6677,100 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 414849048}
   m_SourcePrefab: {fileID: 100100000, guid: 08f5427fe0d15ad47a5a1bb70b6156c7, type: 3}
+--- !u!1 &1823133620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823133622}
+  - component: {fileID: 1823133621}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1823133621
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823133620}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1.3
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 25.04
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.3
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1823133622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823133620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7175522, y: -0.24918619, z: 0.41698772, w: 0.49914566}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 67.539, y: -246.237, z: -188.833}
 --- !u!1001 &1824956764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7135,6 +7234,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 1186186309}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &1877412738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8182,6 +8282,7 @@ MonoBehaviour:
   teammates: []
   teammateHands: []
   playerHand: {fileID: 1109488247}
+  passIconPrefab: {fileID: 0}
 --- !u!114 &7285499388920270693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8202,6 +8303,7 @@ SceneRoots:
   - {fileID: 1009852306}
   - {fileID: 145776567}
   - {fileID: 140738201}
+  - {fileID: 1823133622}
   - {fileID: 78977300}
   - {fileID: 1271262980}
   - {fileID: 2038953981}

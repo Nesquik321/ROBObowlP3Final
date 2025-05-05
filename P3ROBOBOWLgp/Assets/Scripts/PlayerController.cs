@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     public Transform[] teammates;
     public Transform[] teammateHands;
     public Transform playerHand;
+    public GameObject passIconPrefab;
 
     private Rigidbody rb;
     private Vector3 movement;
     private float currentSpeed;
     private bool isControlled = false;
+    private List<GameObject> activeIcons = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (!isControlled || !GameManager.Instance.playStarted) return;
+
 
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
