@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8e28389c100316a4ea476e3488b6138e
   - enabled: 1
+    path: Assets/Scenes/Interlude.unity
+    guid: 59e0e7d59ce954540990c35299e649d5
+  - enabled: 1
     path: Assets/Scenes/Robobowl.unity
     guid: 166be2f72af02214f9aff58d5d973fa3
   m_configObjects: {}

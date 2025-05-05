@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void StartGame()
     {
-        SceneManager.LoadScene("Robobowl");
+        SceneManager.LoadScene("Interlude");
     }
 
     // Update is called once per frame
